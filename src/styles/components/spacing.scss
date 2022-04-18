@@ -1,0 +1,57 @@
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
+.my-1 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 4rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 2rem !important;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: $tablet) {
+  .mt-0--mobile {
+    margin-top: 0 !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 2rem !important;
+  }
+
+  .mb-6 {
+    margin-bottom: 3rem !important;
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+  .mb-4 {
+    margin-bottom: 2rem !important;
+  }
+
+  .mb-6 {
+    margin-bottom: 3rem !important;
+  }
+}

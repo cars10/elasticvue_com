@@ -1,0 +1,12 @@
+.gallery__thumb {
+  img {
+    border-radius: $default-border-radius;
+    box-shadow: $default-box-shadow;
+    max-width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: $default-box-shadow-hover;
+    }
+  }
+}

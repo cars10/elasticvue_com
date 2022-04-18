@@ -1,0 +1,23 @@
+.code-block {
+  background-color: $default-text-color;
+  color: #fff;
+  padding: 10px 12px;
+  word-break: break-all;
+  text-align: left;
+  border-radius: $default-border-radius;
+  font-size: 0.9em;
+  min-width: 200px;
+}
+
+.code-block .comment {
+  color: #bbe000;
+}
+
+.code-inline {
+  font-size: 0.9em;
+  background-color: $light-grey;
+  padding: 2px 4px;
+  color: $default-text-color;
+  border-radius: $default-border-radius;
+  font-family: monospace;
+}

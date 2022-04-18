@@ -1,0 +1,132 @@
+.header {
+  height: $header-height;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 3px solid $default-color;
+  top: 0;
+  background-color: $default-color;
+  color: #fff;
+  box-shadow: none;
+  border-bottom: 2px solid $default-color;
+
+  a.brand .brand-logo {
+    width: 52px;
+    margin-top: 14px;
+    margin-right: 8px;
+    float: left;
+  }
+
+  a.brand .brand-title, a.brand:visited .brand-title {
+    font-size: 36px;
+    font-weight: normal;
+    padding: 18px 0;
+  }
+}
+
+.navigation {
+  display: inline-block;
+  list-style: none;
+  height: $header-height;
+
+  li {
+    float: left;
+    height: 100%;
+  }
+
+  a.navigation__link {
+    margin-left: 40px;
+    font-size: 1.2rem;
+    margin-top: 28px;
+    padding: 6px 8px;
+  }
+}
+
+/** mobile **/
+@media only screen and (max-width: $tablet) {
+  .header {
+    height: $header-height--mobile !important;
+
+    a.brand {
+      .brand-logo {
+        width: 32px !important;
+      }
+
+      .brand-title {
+        font-size: 24px !important;
+        padding: 15px 0 !important;
+      }
+    }
+  }
+
+  .navigation {
+    height: auto;
+    max-height: 0;
+    position: absolute;
+    margin-top: $header-height--mobile;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0 0 $default-border-radius $default-border-radius;
+    box-shadow: $default-box-shadow--bottom;
+    overflow: hidden;
+    transition: max-height $transition-duration;
+    background-color: $default-color;
+    z-index: 5;
+
+    li {
+      float: none;
+      height: initial;
+    }
+
+    a.navigation__link {
+      margin: 0;
+      padding: 12px 0;
+      width: 100%;
+
+      &:hover, &:focus {
+        border: none;
+        background-color: $default-color--dark;
+      }
+
+      &:after {
+        display: none
+      }
+    }
+
+    &.navigation--open {
+      border-top: 1px solid $default-color--dark;
+      max-height: 350px;
+    }
+  }
+}
+
+/** tablet **/
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+  .header {
+    height: $header-height--tablet !important;
+
+    a.brand {
+      .brand-logo {
+        width: 40px !important;
+      }
+
+      .brand-title {
+        padding: 18px 0 !important;
+        font-size: 28px !important;
+      }
+    }
+  }
+
+  .navigation {
+    height: $header-height--tablet;
+    margin-left: 20px;
+    margin-right: 60px;
+
+    a.navigation__link {
+      font-size: 1rem;
+      margin-top: 26px;
+    }
+  }
+}

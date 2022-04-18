@@ -1,0 +1,30 @@
+.back_to_top {
+  position: fixed;
+  bottom: 34px;
+  right: 34px;
+  background-color: $grey;
+  padding: 15px 20px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: $default-border-radius;
+  box-shadow: $default-box-shadow;
+  user-select: none;
+  z-index: 5;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+@media only screen and (max-width: $tablet) {
+  .back_to_top {
+    bottom: 8px !important;
+    right: 8px !important;
+    padding: 10px 15px !important;
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+  .back_to_top {
+    bottom: 15px !important;
+    right: 15px !important;
+  }
+}

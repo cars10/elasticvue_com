@@ -1,0 +1,24 @@
+.subheading {
+  color: $default-text-color-light;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.quote {
+  border-left: 3px solid #fff;
+  padding: 10px 20px;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: $tablet) {
+  .quote {
+    font-size: 1.2rem !important;
+    padding: 5px 10px !important;
+  }
+
+  .subheading {
+    font-weight: normal;
+  }
+}

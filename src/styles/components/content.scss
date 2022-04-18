@@ -1,0 +1,43 @@
+.content {
+  color: #fff;
+  padding-top: $content-padding;
+  padding-bottom: $content-padding;
+  height: 100%;
+  position: relative;
+}
+
+.content--lead {
+  min-height: 400px;
+}
+
+.content--white {
+  background-color: #fff;
+  color: $default-text-color;
+}
+
+.content:not(.content--white) .subheading {
+  color: #fff;
+  opacity: .8;
+}
+
+@media only screen and (max-width: $tablet) {
+  .content {
+    padding-top: $content-padding--mobile !important;
+    padding-bottom: $content-padding--mobile !important;
+  }
+
+  .content--lead {
+    min-height: 0 !important;
+  }
+}
+
+@media only screen and (min-width: $tablet) and (max-width: $desktop) {
+  .content {
+    padding-top: $content-padding--tablet !important;
+    padding-bottom: $content-padding--tablet !important;
+  }
+
+  .content--lead {
+    min-height: 0 !important;
+  }
+}

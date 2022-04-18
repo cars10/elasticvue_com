@@ -1,0 +1,41 @@
+a, a:visited {
+  color: $default-color;
+}
+
+.text--muted > a, .text--muted > a:visited {
+  color: #82a3c2;
+}
+
+.link--white {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+
+  &:visited {
+    color: #fff
+  }
+
+  &.link--hover:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-top: 4px;
+    background: #fff;
+    transition: width .3s;
+  }
+
+  &.link--hover:hover:after {
+    width: 100%;
+  }
+
+  &.link--hover.active {
+    &:after {
+      width: 100%
+    }
+  }
+
+  &.link--decorated {
+    text-decoration: underline;
+  }
+}

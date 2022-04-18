@@ -1,0 +1,25 @@
+.button, .button:visited {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: $default-text-color;
+  border-radius: $default-border-radius;
+  display: inline-block;
+  box-shadow: $default-box-shadow;
+}
+
+.button:hover, .button:focus {
+  background-color: $grey;
+}
+
+.button--primary, .button--primary:visited {
+  background-color: $default-color;
+  color: #fff;
+}
+
+.button--primary:hover, .button--primary:focus {
+  background-color: lighten($default-color, 10%);
+}
+
+.button--big {
+  font-size: 1.25rem;
+}
