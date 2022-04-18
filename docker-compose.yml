@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  nginx:
+    build: .
+    container_name: elasticvue_com
+    restart: always
+    networks:
+      - nginx
+networks:
+  nginx:
+    name: nginx
