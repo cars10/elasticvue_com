@@ -38,6 +38,23 @@
     <div class="container">
       <h2 class="has-text-centered mb-4">Get elasticvue</h2>
 
+      <div class="columns mb-4">
+        <div class="column is-offset-one-quarter is-half-desktop feature-wrapper">
+          <div class="feature">
+            <div class="feature__badge feature__badge--warning">beta</div>
+            <h3 class="feature__title">
+              Native desktop app
+            </h3>
+            <div class="feature__body">
+              <p class="mb-1">Elasticvue desktop is currently in beta. Try it here:</p>
+              <a class="button button--primary mb-1"
+                 href="https://github.com/cars10/elasticvue/releases"
+                 rel="noopener" target="_blank"><span v-html="externalIcon"></span> Elasticvue desktop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="has-text-centered subheading mb-4">
         <p>
           The browser extensions are the easiest way to run elasticvue.<br>
@@ -94,7 +111,6 @@
           </div>
         </div>
       </div>
-
 
       <div class="has-text-centered subheading mb-4">
         <p>
