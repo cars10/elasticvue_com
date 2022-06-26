@@ -43,10 +43,11 @@
           <div class="feature">
             <div class="feature__badge feature__badge--warning">beta</div>
             <h3 class="feature__title">
-              Native desktop app
+              Desktop app
             </h3>
             <div class="feature__body">
-              <p class="mb-1">Elasticvue desktop is currently in beta. Try it here:</p>
+              <p class="mb-1">Elasticvue desktop (based on <a href="https://tauri.studio" target="_blank">tauri</a>) is
+                currently in beta. Try it here:</p>
               <a class="button button--primary mb-1"
                  href="https://github.com/cars10/elasticvue/releases"
                  rel="noopener" target="_blank"><span v-html="externalIcon"></span> Elasticvue desktop</a>
